@@ -62,8 +62,8 @@ function textToHexEditorFormat(txt) {
 			const chunk = block.slice(i, i + ROW_WIDTH);
 			const charLine = chunk
 				.map((data) => data.char)
-				.join(" ")
-				.padEnd(ROW_WIDTH * 2, " ");
+				.join("")
+				.padEnd(ROW_WIDTH, " ");
 			const hasColor = chunk.some((data) => data.hex.includes("\x1b"));
 			const hexLine =
 				chunk.map((data) => data.hex).join(" ") + (hasColor ? " " : "");
