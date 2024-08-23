@@ -2,7 +2,7 @@ const text =
 	"hello world, this is a longer text that will exceed 512 bits to ensure proper handling.";
 
 function textToHexEditorFormat(txt) {
-	const ROW_WIDTH = 8;
+	const ROW_WIDTH = 4;
 	const BLOCK_SIZE = 64;
 	const PADDING_BYTE = {
 		char: ".",
